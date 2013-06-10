@@ -37,6 +37,7 @@ abstract class GameRocket {
 
 require_once('GameRocket/Instance.php');
 require_once('GameRocket/DynProp.php');
+require_once('GameRocket/Map.php');
 
 require_once('GameRocket/Action.php');
 require_once('GameRocket/Player.php');
