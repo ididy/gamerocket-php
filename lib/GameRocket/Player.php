@@ -15,7 +15,7 @@ class GameRocket_Player extends GameRocket {
     
     public static function createSignature() {
         $signature = array(
-            'name', 'emailHash', 'locale'
+            'name', 'locale'
         );
         
         return $signature;
@@ -70,7 +70,7 @@ class GameRocket_Player extends GameRocket {
     }
     
     protected function _initialize($attributes) {
-        $this->_attributes = $playerAttribs;
+        $this->_attributes = $attributes;
         
         $this->_set('dynProp', new GameRocket_DynProp($attributes['dynProp']));
     }
