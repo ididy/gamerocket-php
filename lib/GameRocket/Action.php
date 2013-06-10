@@ -19,7 +19,7 @@ class GameRocket_Action extends GameRocket {
         if (isset($response['error'])) {
             return new GameRocket_Result_Error($response);
         } else {
-            return new GameRocket_Result_Successful(GameRocket_Map::factory($attributes));
+            return new GameRocket_Result_Successful(GameRocket_Map::factory($response));
         }
     }
     

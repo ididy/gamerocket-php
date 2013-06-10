@@ -19,7 +19,7 @@ class GameRocket_Purchase extends GameRocket {
         if (isset($response['error'])) {
             return new GameRocket_Result_Error($response);
         } else {
-            return new GameRocket_Result_Successful(self::factory($response));
+            return new GameRocket_Result_Successful(GameRocket_Map::factory($response));
         }
     }
     
