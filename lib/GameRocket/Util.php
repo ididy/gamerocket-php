@@ -63,7 +63,8 @@ class GameRocket_Util {
             'Player' => 'player',
             'Purchase' => 'purchase',
             'Quest' => 'quest',
-            'QuestTemplate' => 'questTemplate'
+            'QuestTemplate' => 'questTemplate',
+            'Map' => 'map'
         );
         
         $name = str_replace('GameRocket_', '', $name);
@@ -81,7 +82,8 @@ class GameRocket_Util {
             'player' => 'Player',
             'purchase' => 'Purchase',
             'quest' => 'Quest',
-            'questTemplate' => 'QuestTemplate'
+            'questTemplate' => 'QuestTemplate',
+            'map' => 'Map'
         );
         
         return 'GameRocket_' . $responseKeysToClassNames[$name];
