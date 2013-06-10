@@ -11,7 +11,7 @@ class GameRocket_Item extends GameRocket {
             
             $items = array();
             foreach($response['items'] as $item) {
-                array_push(&$items, self::factory($item));
+                array_push($items, self::factory($item));
             }
             return $items;
         } catch (GameRocket_Exception_NotFound $e) {

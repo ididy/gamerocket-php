@@ -2,7 +2,7 @@
 
 class GameRocket_Util {
     
-    public static function extractAttributeAsArray(& $attributeArray, $attributeName) {
+    public static function extractAttributeAsArray(&$attributeArray, $attributeName) {
         if (!isset($attributeArray[$attributeName])) {
             return array();
         }

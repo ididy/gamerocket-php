@@ -12,7 +12,7 @@ class GameRocket_Crypto extends GameRocket {
         
         $baseString = $method . '&' . rawurlencode(strtolower($url)) . '&';
         
-        array_walk($_parameters, create_function('&$item', '$item = rawurlencode($item);'));
+        array_walk($_parameters, create_function('$item', '$item = rawurlencode($item);'));
         ksort($_parameters);
         $baseString .= rawurlencode(http_build_query($_parameters));
         
