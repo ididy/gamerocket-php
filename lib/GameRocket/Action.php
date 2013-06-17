@@ -6,7 +6,7 @@ class GameRocket_Action extends GameRocket {
         self::_validateId($id);
         
         try {
-            $response = GameRocket_Http::get('/apps/' . GameRocket_Configuration::apikey() . '/actions/' . $id);
+            $response = GameRocket_Http::get('/games/' . GameRocket_Configuration::apikey() . '/actions/' . $id);
             return self::factory($response['action']);
         } catch (GameRocket_Exception_NotFound $e) {
             throw new GameRocket_Exception_NotFound('Action with id ' . $id . ' not found.');
@@ -14,7 +14,7 @@ class GameRocket_Action extends GameRocket {
     }
     
     public static function run($id, $attribs = array()) {
-        $response = GameRocket_Http::post('/apps/' . GameRocket_Configuration::apikey() . '/actions/' . $id . '/run', $attribs);
+        $response = GameRocket_Http::post('/games/' . GameRocket_Configuration::apikey() . '/actions/' . $id . '/run', $attribs);
         
         if (isset($response['error'])) {
             return new GameRocket_Result_Error($response);

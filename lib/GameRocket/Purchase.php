@@ -6,7 +6,7 @@ class GameRocket_Purchase extends GameRocket {
         self::_validateId($id);
         
         try {
-            $response = GameRocket_Http::get('/apps/' . GameRocket_Configuration::apikey() . '/purchases/' . $id);
+            $response = GameRocket_Http::get('/games/' . GameRocket_Configuration::apikey() . '/purchases/' . $id);
             return self::factory($response['purchase']);
         } catch (GameRocket_Exception_NotFound $e) {
             throw new GameRocket_Exception_NotFound('Purchase with id ' . $id . ' not found.');
@@ -14,7 +14,7 @@ class GameRocket_Purchase extends GameRocket {
     }
     
     public static function buy($id, $attribs = array()) {
-        $response = GameRocket_Http::post('/apps/' . GameRocket_Configuration::apikey() . '/purchases/' . $id . '/buy', $attribs);
+        $response = GameRocket_Http::post('/games/' . GameRocket_Configuration::apikey() . '/purchases/' . $id . '/buy', $attribs);
         
         if (isset($response['error'])) {
             return new GameRocket_Result_Error($response);

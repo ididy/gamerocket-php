@@ -41,7 +41,7 @@ require_once('GameRocket/Map.php');
 
 require_once('GameRocket/Action.php');
 require_once('GameRocket/Player.php');
-require_once('GameRocket/App.php');
+require_once('GameRocket/Game.php');
 require_once('GameRocket/Achievement.php');
 require_once('GameRocket/AchievementTemplate.php');
 require_once('GameRocket/Item.php');

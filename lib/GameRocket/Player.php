@@ -23,7 +23,7 @@ class GameRocket_Player extends GameRocket {
     
     public static function create($attribs = array()) {
         GameRocket_Util::verifyKeys(self::createSignature(), $attribs);
-        return self::_doCreate('/apps/' . GameRocket_Configuration::apikey() . '/players', $attribs);
+        return self::_doCreate('/games/' . GameRocket_Configuration::apikey() . '/players', $attribs);
     }
     
     private static function _doCreate($url, $params) {

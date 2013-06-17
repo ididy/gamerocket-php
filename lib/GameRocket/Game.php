@@ -1,15 +1,15 @@
 <?php
 
-class GameRocket_App extends GameRocket {
+class GameRocket_Game extends GameRocket {
     
     public static function find($id) {
         self::_validateId($id);
         
         try {
-            $response = GameRocket_Http::get('/apps/' . $id);
-            return self::factory($response['app']);
+            $response = GameRocket_Http::get('/games/' . $id);
+            return self::factory($response['game']);
         } catch (GameRocket_Exception_NotFound $e) {
-            throw new GameRocket_Exception_NotFound('App with id ' . $id . ' not found.');
+            throw new GameRocket_Exception_NotFound('Game with id ' . $id . ' not found.');
         }
     }
     
