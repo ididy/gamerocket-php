@@ -1,3 +1,7 @@
+## 1.1
+
+* Remove unstable Item and Quest API
+
 ## 1.0.6
 
 * Rename App to Game

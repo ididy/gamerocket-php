@@ -58,12 +58,8 @@ class GameRocket_Util {
             'AchievementTemplate' => 'achievementTemplate',
             'Action' => 'action',
             'Game' => 'game',
-            'Item' => 'item',
-            'ItemTemplate' => 'itemTemplate',
             'Player' => 'player',
             'Purchase' => 'purchase',
-            'Quest' => 'quest',
-            'QuestTemplate' => 'questTemplate',
             'Map' => 'map'
         );
         
@@ -77,12 +73,8 @@ class GameRocket_Util {
             'achievementTemplate' => 'AchievementTemplate',
             'action' => 'Action',
             'game' => 'Game',
-            'item' => 'Item',
-            'itemTemplate' => 'ItemTemplate',
             'player' => 'Player',
             'purchase' => 'Purchase',
-            'quest' => 'Quest',
-            'questTemplate' => 'QuestTemplate',
             'map' => 'Map'
         );
         
