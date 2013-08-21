@@ -1,3 +1,8 @@
+## 1.1.1
+
+* Fix production URL
+* Add crt file
+
 ## 1.1
 
 * Remove unstable Item and Quest API

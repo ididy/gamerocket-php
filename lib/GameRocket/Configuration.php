@@ -103,7 +103,7 @@ class GameRocket_Configuration extends GameRocket {
             case 'production':
                 $caPath = realpath(
                     dirname(__FILE__) .
-                    $sslPath . 'www_dingg_it.ca.crt'
+                    $sslPath . 'www_gamerocket_io.ca.crt'
                 );
                 break;
             
@@ -133,7 +133,7 @@ class GameRocket_Configuration extends GameRocket {
     public static function serverName() {
         switch(self::environment()) {
             case 'production':
-                $serverName = 'developer.dingg.it';
+                $serverName = 'www.gamerocket.io';
                 break;
             
             default:
