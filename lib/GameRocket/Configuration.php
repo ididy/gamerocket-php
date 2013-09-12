@@ -93,7 +93,7 @@ class GameRocket_Configuration extends GameRocket {
     public static function baseUrl() {
         return self::protocol() . '://' .
                 self::serverName() . ':' .
-                self::portNumber() . '/api/' . self::API_VERSION;
+                self::portNumber() . '/' . self::API_VERSION;
     }
     
     public static function caFile($sslPath = null) {
@@ -123,7 +123,7 @@ class GameRocket_Configuration extends GameRocket {
             return 443;
         }
         
-        return getenv("GATEWAY_PORT") ? get("GATEWAY_PORT") : 8180;
+        return getenv("GATEWAY_PORT") ? get("GATEWAY_PORT") : 8280;
     }
     
     public static function protocol() {
@@ -133,7 +133,7 @@ class GameRocket_Configuration extends GameRocket {
     public static function serverName() {
         switch(self::environment()) {
             case 'production':
-                $serverName = 'www.gamerocket.io';
+                $serverName = 'api.gamerocket.io';
                 break;
             
             default:

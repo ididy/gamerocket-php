@@ -1,3 +1,7 @@
+## 1.1.2
+
+* Change API URI
+
 ## 1.1.1
 
 * Fix production URL
