@@ -38,7 +38,7 @@ The following PHP extensions are required:
 
 ## Documentation
 
- * [Official documentation](https://www.gamerockets.io/docs/php)
+ * [Official documentation](https://www.gamerocket.io/docs/php/sdk/)
 
 ## License
 
